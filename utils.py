@@ -9,7 +9,7 @@ def fine_print(scores):
 
 
 def save_config(id, config, model):
-    with open('log_config.txt', 'w') as outfile:
+    with open('log_config.txt', 'a') as outfile:
         outfile.write(f"ID: p{id}  MODEL: {model}\n")
         json.dump(config, outfile)
         outfile.write('\n================\n\n')
